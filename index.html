@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGeeks — Игровой Портал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">A<span>Geeks</span></a>
+            <nav class="nav">
+                <a href="#hero">Главная</a>
+                <a href="#games">Обзоры</a>
+                <a href="#subscribe">Подписка</a>
+            </nav>
+            <button id="theme-toggle" class="btn-theme">🌙 Тема</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <span class="badge">Главный релиз</span>
+                <h1>Cyberpunk 2077: Phantom Liberty</h1>
+                <p>Возвращение в Найт-Сити состоялось. Стоит ли дополнение своих денег? Разбираемся в нашем детальном обзоре.</p>
+                <a href="#games" class="btn">Читать обзор</a>
+            </div>
+        </section>
+
+        <section id="games" class="games-section container">
+            <h2>Свежие обзоры игр</h2>
+            <div class="games-grid" id="games-container">
+                <!-- Только одна карточка Ведьмака (без дубля) -->
+                <article class="game-card">
+                    <div class="game-rating">⭐ 9.5</div>
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg" alt="Ведьмак 3">
+                    <div class="game-info">
+                        <span class="game-genre">Action / RPG</span>
+                        <h3>Ведьмак 3: Дикая Охота</h3>
+                        <p>Легендарное приключение Геральта из Ривии в обновленной версии.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="more-btn-container">
+                <button id="load-more" class="btn-secondary">Показать еще</button>
+            </div>
+        </section>
+
+        <section id="subscribe" class="subscribe-section">
+            <div class="container subscribe-container">
+                <h2>Оставайся в курсе событий</h2>
+                <p>Подпишись на еженедельную рассылку лучших обзоров и видеоматериалов</p>
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                        <span class="error-message" id="email-error">Введите корректный email</span>
+                    </div>
+                    <button type="submit" class="btn">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 AGeeks. Все права защищены.</p>
+            <div class="socials">
+                <a href="#">Discord</a>
+                <a href="#">YouTube</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
